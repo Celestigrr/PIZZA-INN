@@ -1,0 +1,80 @@
+.menu-hero{
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+.menu-hero{
+    font-size: 28px;
+    color: rgb(193, 46, 46);
+}
+
+.pizza-products-prices h3{
+    font-size: 22px;
+    margin: 20px;
+    border-bottom: 2px solid rgb(255, 190, 111);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.pizza-general-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 20px 30px;
+}
+
+.pizza-products{
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 340px;
+    width: 100%;
+}
+
+.pizza-products img{
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.pizza-info p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.pizza-info p:last-child{
+    color: rgb(193, 46, 46);
+    font-weight: 700;
+}
+
+@media(min-width: 1024px){
+    .pizza-general-info{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .pizza-products{
+        max-width: none;
+        width: 100%;
+        transition: 0.6s;
+    }
+
+    .pizza-products:hover{
+        background-color: rgb(255, 190, 111);
+        transform: scale(1.03);
+    }
+
+    .pizza-products img{
+        max-width: 340px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
