@@ -7,7 +7,7 @@
 }
 
 body{
-    /* background-color: rgb(72, 241, 29); */
+    /* background-color: rgb(149, 241, 126); */
     font-family: "Poppins", sans-serif;
 }
 
@@ -30,6 +30,20 @@ body{
 .nav-list a{
     text-decoration: none;
     color: black;
+}
+
+.nav-list a:active{
+    color: rgb(255, 190, 111);
+}
+
+.pizza{
+    color: red;
+    font-size: 16px;
+}
+
+.inn{
+    color: green;
+    font-size: 16px;
 }
 
 .hero-section{
@@ -70,10 +84,10 @@ body{
     font-style: italic;
 }
 
-span{
+.one{
     font-style: italic;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
     color: red;
 }
 
@@ -83,17 +97,11 @@ span{
     background-color: bisque;
     border-radius: 20px;
     padding: 15px;
-    width: 400px;
-}
-
-.deals-product:hover{
-    background-color: rgb(255, 190, 111);
-    transition: 0.6s;
-    transform: scale(1.03);  
+    max-width: 340px;
+    width: 100%;
 }
 
 .deals-product img{
-    width: 450px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -107,16 +115,15 @@ span{
 .assurance{
     display: flex;
     flex-direction: column;
-    background-image: url(images/pizza-background.jpg);
+    background-image: url("images/pizza-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: grayscale(20%);
 }
 
 .assurance-words p{
     margin: 20px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
 }
@@ -144,4 +151,70 @@ span{
 
 .assurance a:active{
     background-color: rgb(255, 190, 111);
+}
+
+
+
+@media(min-width:768px){
+
+}
+
+
+@media(min-width: 1024px){
+    .navbar{
+        font-size: 1.03em;
+        margin-right: 15px;
+    }
+
+    .nav-list a:hover{
+    color: rgb(193, 46, 46);
+    }
+
+    .nav-list a:active{
+        color: rgb(255, 190, 111);
+    }
+
+    .pizza, .inn{
+        font-size: 0.8em;
+    }
+
+    .deals-product:hover{
+    background-color: rgb(255, 190, 111);
+    transition: 0.6s;
+    transform: scale(1.03);  
+    }
+
+    .hero-section{
+        flex-direction: row;
+    }
+
+    .hero-section p{
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .hero-section img{
+        width: 700px;
+    }
+    
+    .deals-products-prices{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .deals-product img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .assurance a{
+        font-size: 10px;
+    }
+
+    .assurance-words p{
+        font-size: 14px;
+    }
+
 }
